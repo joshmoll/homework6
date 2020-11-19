@@ -52,9 +52,9 @@ document.querySelector("#volume").innerHTML = video.volume * 100 + "%";
 });
 
 document.querySelector("#old").addEventListener("click", function () {
-	video.style.filter = "grayscale(100%)"; 
+	video.classList.add("oldTime"); 
 });
 
 document.querySelector("#original").addEventListener("click", function () {
-	video.style.filter = "grayscale(0)"; 
+	video.classList.remove("oldTime");
 });
