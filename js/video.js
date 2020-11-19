@@ -36,12 +36,12 @@ document.querySelector("#skip").addEventListener("click", function() {
 });
 document.querySelector("#mute").addEventListener("click", function() {
 	console.log("Mute");
-	if (video.muted) {
+	if (video.mute) {
 		this.innerHTML = "mute";
-		video.muted = false;
+		video.mute = false;
 	} else { 
 		this.innerHTML = "unmute";
-		video.muted = true;
+		video.mute = true;
 	}
 });
 
